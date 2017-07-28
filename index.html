@@ -1,1 +1,59 @@
-Hello World!
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<title>okWOLF</title>
+
+	<script type="text/javascript"
+		src="mootools-yui-compressed.js">
+	</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27540993-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+* {margin: 0em; padding: 0em;}
+body {background: url(okwolf.png) fixed center center no-repeat white;}
+</style>
+</head>
+<body id="body" onload="swap();">
+<script>
+var black = false;
+var duration = 3000;
+var swap = function() {
+	var myEffect = new Fx.Morph('body',
+		{
+			duration: duration,
+			transition: Fx.Transitions.Sine.easeIn
+		}
+	);
+	black = !black;
+	if(black)
+	{
+		myEffect.start({
+			'background-color': ['#ffffff', '#00aff0']
+		});
+	}
+	else
+	{
+		myEffect.start({
+			'background-color': ['#00aff0', '#ffffff']
+		});
+	}
+	setTimeout(swap, duration);
+}
+</script>
+</body>
+</html>
