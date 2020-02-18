@@ -1,8 +1,112 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; URL=https://github.com/okwolf">
-<title>okWOLF</title>
-<link rel="canonical" href="https://github.com/okwolf">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>okWOLF</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      body,
+      a {
+        color: #aaf;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90vw;
+        height: 90vh;
+        background-image: url(./digital-wolf.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+      aside {
+        display: flex;
+        justify-content: space-around;
+        font-size: 5vh;
+      }
+      footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        grid-column: 1 / span 2;
+        text-align: center;
+        font-family: monospace;
+        font-size: 3vh;
+      }
+      @media (max-width: 480px) {
+        main aside {
+          align-items: center;
+          height: 30vh;
+        }
+      }
+      @media (orientation: landscape) {
+        main {
+          grid-template-columns: 1fr 4fr 1fr;
+        }
+        main footer {
+          grid-row: 1;
+          grid-column: 2;
+        }
+        main aside {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          font-size: 5vw;
+          height: inherit;
+        }
+        main aside:last-of-type {
+          grid-column: 3;
+        }
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/2ad593eb51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-27540993-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-27540993-1");
+    </script>
+  </head>
 
+  <body>
+    <main>
+      <aside>
+        <a href="https://github.com/okwolf">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/okwolf">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </aside>
+      <aside>
+        <a href="https://www.instagram.com/okwolfgang">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.soundcloud.com/okwolf">
+          <i class="fab fa-soundcloud"></i>
+        </a>
+      </aside>
+      <footer>ok<br />WO<br />LF</footer>
+    </main>
+  </body>
 </html>
