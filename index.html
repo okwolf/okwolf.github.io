@@ -42,7 +42,7 @@
         grid-column: 1 / span 2;
         text-align: center;
         font-family: monospace;
-        font-size: 3vh;
+        font-size: 5vh;
       }
       @media (max-width: 480px) {
         main aside {
@@ -86,33 +86,44 @@
       gtag("js", new Date());
       gtag("config", "UA-27540993-1");
     </script>
+    <script type="module">
+      for (const link of document.querySelectorAll("a")) {
+        link.setAttribute("target", "_blank");
+      }
+    </script>
   </head>
 
   <body>
     <main>
       <aside>
-        <a href="https://github.com/okwolf">
-          <i class="fa fa-github"></i>
+        <a title="Instagram" href="https://www.instagram.com/okwolfgang">
+          <i class="fa fa-instagram"></i>
         </a>
-        <a href="https://words.okwolf.com">
-          <i class="fa fa-book"></i>
+        <a
+          title="Spotify"
+          href="https://open.spotify.com/artist/7JqTxLsmWsJ5AL4fW1XZn2"
+        >
+          <i class="fa fa-spotify"></i>
         </a>
-        <a href="https://twitter.com/okwolf">
-          <i class="fa fa-twitter"></i>
+        <a
+          title="Apple Music"
+          href="https://music.apple.com/us/artist/okwolf/1612469365"
+        >
+          <i class="fa fa-apple"></i>
         </a>
       </aside>
       <aside>
-        <a href="https://www.instagram.com/okwolfgang">
-          <i class="fa fa-instagram"></i>
+        <a title="Model Mayhem" href="https://www.modelmayhem.com/okwolf">
+          <i class="fa fa-camera"></i>
         </a>
-        <a href="https://www.youtube.com/barelyfunctionaldev">
-          <i class="fa fa-youtube"></i>
+        <a title="Twitter" href="https://twitter.com/okwolf">
+          <i class="fa fa-twitter"></i>
         </a>
-        <a href="https://www.soundcloud.com/okwolf">
-          <i class="fa fa-soundcloud"></i>
+        <a title="GitHub" href="https://github.com/okwolf">
+          <i class="fa fa-github"></i>
         </a>
       </aside>
-      <footer>ok<br />WO<br />LF</footer>
+      <footer>ok<br />WOLF</footer>
     </main>
   </body>
 </html>
