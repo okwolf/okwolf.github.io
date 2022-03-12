@@ -22,51 +22,42 @@
       }
       main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 90vw;
-        height: 90vh;
-        background-image: url(./digital-wolf.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center bottom;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10fr;
+        width: 100vw;
+        height: 100vh;
       }
       aside {
         display: flex;
         justify-content: space-around;
-        font-size: 5vh;
+        align-items: center;
+        font-size: 5vw;
       }
       footer {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        grid-column: 1 / span 2;
         text-align: center;
         font-family: monospace;
         font-size: 5vh;
-      }
-      @media (max-width: 480px) {
-        main aside {
-          align-items: center;
-          height: 30vh;
-        }
+        background-image: url(./digital-wolf.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
       }
       @media (orientation: landscape) {
         main {
-          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-columns: 1fr 3fr 1fr;
         }
         main footer {
           grid-row: 1;
           grid-column: 2;
+          font-size: 3vw;
         }
         main aside {
           flex-direction: column;
           align-items: center;
-          justify-content: space-around;
-          font-size: 5vw;
           height: inherit;
-        }
-        main aside:last-of-type {
-          grid-column: 3;
         }
       }
     </style>
@@ -99,6 +90,9 @@
         <a title="Instagram" href="https://www.instagram.com/okwolfgang">
           <i class="fa fa-instagram"></i>
         </a>
+        <a title="Model Mayhem" href="https://www.modelmayhem.com/okwolf">
+          <i class="fa fa-camera"></i>
+        </a>
         <a
           title="Spotify"
           href="https://open.spotify.com/artist/7JqTxLsmWsJ5AL4fW1XZn2"
@@ -113,14 +107,17 @@
         </a>
       </aside>
       <aside>
-        <a title="Model Mayhem" href="https://www.modelmayhem.com/okwolf">
-          <i class="fa fa-camera"></i>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/okwolf">
+          <i class="fa fa-linkedin"></i>
         </a>
         <a title="Twitter" href="https://twitter.com/okwolf">
           <i class="fa fa-twitter"></i>
         </a>
         <a title="GitHub" href="https://github.com/okwolf">
           <i class="fa fa-github"></i>
+        </a>
+        <a title="wolfWORDS" href="https://words.okwolf.com">
+          <i class="fa fa-book"></i>
         </a>
       </aside>
       <footer>ok<br />WOLF</footer>
