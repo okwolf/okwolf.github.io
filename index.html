@@ -23,7 +23,7 @@
       main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 10fr;
+        grid-template-rows: 1fr 1fr 8fr;
         width: 100vw;
         height: 100vh;
       }
@@ -31,19 +31,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 5vw;
+        font-size: 8vw;
       }
       footer {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        text-align: center;
-        font-family: monospace;
-        font-size: 5vh;
-        background-image: url(./digital-wolf.png);
-        background-size: contain;
+        background-image: url(./digital-wolf.jpg);
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: center;
       }
       @media (orientation: landscape) {
         main {
@@ -52,12 +46,12 @@
         main footer {
           grid-row: 1;
           grid-column: 2;
-          font-size: 3vw;
         }
         main aside {
           flex-direction: column;
           align-items: center;
           height: inherit;
+          font-size: 5vw;
         }
       }
     </style>
@@ -120,7 +114,7 @@
           <i class="fa fa-book"></i>
         </a>
       </aside>
-      <footer>ok<br />WOLF</footer>
+      <footer></footer>
     </main>
   </body>
 </html>
